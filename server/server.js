@@ -1,8 +1,12 @@
 const path = require('path');
 const express = require('express');
 const { execFile } = require('child_process');
+const cors = require('cors');
 
 const app = express();
+const port = 5000;
+
+app.use(cors());
 app.use(express.json());
 
 const calcPath = path.join(__dirname, '../calc');

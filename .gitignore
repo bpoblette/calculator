@@ -1,2 +1,4 @@
 calc
 *.o
+
+**/package-lock.json
